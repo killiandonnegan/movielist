@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+
+    <title>Search</title>
+    <!--Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--imports provided by firebase CLI tools-->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    
+
+    <!--JQuery and axios-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+   
+    <style>
+      body
+      {
+        background-color: black;
+      }
+    </style>
+    
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header" style="width: 75%;">
+        <a class="navbar-brand" onClick='showSearch()'>Search</a>
+        <a class='navbar-brand' onClick = 'showWatchlist()'>Watchlist</a>
+        <span id="userDetails">
+            <a id="usrName"></a>
+            <img id="usrIMG" src="">
+            <button id="signOut" onClick="signOut()">Sign out</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div id='search'>
+    <div class="search container">
+        <div class="jumbotron">
+            <h3 class="text-center">Search For Any Movie</h3>
+            <form id="searchForm">
+                <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+            </form>
+        </div>
+    </div>
+    
+    <div class="search container">
+      <div id="movies" class="row"></div>
+    </div>
+    <!--Popup for movie details-->
+    <div class="popup hide">
+      <div class="popup-content"></div>
+      <button class ="close" onClick = "closePopup()">X</button>
+    </div>
+  </div>
+  
+  <div id='watchlist'>
+    <div class="list container hide">
+      <div class='jumbotron'>
+        <h3 class='text-center'>Your Watchlist</h3>
+      </div>
+    </div>
+    <div class="list container">
+      <div id="moviesList" class="row"></div>
+    </div>
+  </div>
+  
+
+  
+
+</body>

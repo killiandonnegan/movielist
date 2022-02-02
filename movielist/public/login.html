@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.js"></script>
+    <link rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.css" /> 
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+      @keyframes animate
+      {
+
+        from
+        {
+          background-position: 0 0;
+        }
+
+        to
+        {
+          background-position: 0 -1281vh;
+        }
+
+          
+      }
+      body
+      {
+        background-color: #222;
+        margin-left: -135vh;
+        color: #222;
+
+        
+        background-image: url('new_new.png');
+        background-size: 100%;
+        background-repeat: repeat;
+        position:relative;
+        background-position-x: 500px;
+
+        animation: animate 45s linear infinite;
+        
+        
+        
+      }
+  
+
+      h2
+      {
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 2px 2px 6px #fdfdfd;
+      }
+
+      .head
+      {
+        background-color: white;
+        width: 100%;
+        background: white;
+        height: 80px;
+        text-align: center;
+      }
+
+      .signin
+      {
+        color:white;
+        padding-top: 150px;
+        padding-left: 40px;
+      }
+
+    </style>
+
+    
+  </head>
+  <body>
+
+
+
+
+
+        
+      <div class="signin">
+        <h2> Sign in </h2>
+        <div id="firebaseAuthContainer"></div>
+        <script src="login.js"></script>
+      </div>
+
+  </body>
+</html>

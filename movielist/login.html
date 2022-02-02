@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.js"></script>
+    <link rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.css" /> 
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+
+    <style>
+      body
+      {
+        background-color: #222;
+      }
+
+      h1
+      {
+        text-align: center;
+        color: white;
+      }
+
+      h2
+      {
+        text-align: center;
+      }
+
+
+
+    </style>
+
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header" style="width: 75%;">
+          <a class="navbar-brand" href="login.html"></a>          
+        </div>
+      </div>
+    </nav>
+
+    <h2> Sign in </h2>
+    <div id="firebaseAuthContainer"></div>
+    <script src="login.js"></script>
+  </body>
+</html>

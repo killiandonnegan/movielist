@@ -1,0 +1,14 @@
+{
+  "name": "353proj9nov",
+  "version": "1.0.0",
+  "description": "proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liam cunningham",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.4.0"
+  }
+}
